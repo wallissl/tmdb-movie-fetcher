@@ -1,0 +1,21 @@
+{
+  "name": "tmdb-movie-fetcher",
+  "version": "1.0.0",
+  "description": "API que busca filmes na TMDB, armazena no PostgreSQL e disponibiliza consultas via REST.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --watch src --exec \"node --enable-source-maps src/server.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
