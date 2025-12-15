@@ -3,8 +3,7 @@ dotenv.config();
 
 export async function procurarFilme(nomeDoFilme) {
     const apiKey = process.env.TMDB_KEY;
-    console.log("TMDB_KEY:", process.env.TMDB_KEY)
-
+   
     const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(
         nomeDoFilme
     )}&api_key=${apiKey}&language=pt-BR`;

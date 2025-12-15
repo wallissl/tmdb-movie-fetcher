@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API que busca filmes na TMDB, armazena no PostgreSQL e disponibiliza consultas via REST.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon --watch src --exec \"node --enable-source-maps src/server.js\""
